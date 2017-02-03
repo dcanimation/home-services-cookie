@@ -26,6 +26,10 @@ function eraseCookie(name) {
 }
 
 /* -------------------------------------------------------------- */
+
+/* Creating the div in the HTML will give more control. 
+This function was orginally created when I thought I needed to call it on each button click. */
+/*
 var div = 0;
 function serviceNotifier(serviceName) {
 	if ( div == 0 ){
@@ -34,6 +38,7 @@ function serviceNotifier(serviceName) {
 	}
 	div = $('.service-notifier').length;
 }
+*/
 
 function listDisplay() {
 	for( i=0; i < serviceArray.length; i++ ){
@@ -74,7 +79,10 @@ $('button').click(function(){
 	console.log(cooky);
 });
 
-serviceNotifier();
+/* depracated function */
+//serviceNotifier();
+
+listDisplay();
 
 $(document).ready(function(){
 	checkForm();
