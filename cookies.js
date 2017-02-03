@@ -51,7 +51,7 @@ function checkForm(){
 	for ( var j = 0; j < cboxes.length; j++) {
 		var serviceVal = cboxes[j].value;
 		if ( jQuery.inArray( serviceVal, serviceArray) > -1 ){
-			console.log(serviceVal);
+			//console.log(serviceVal);
 			cboxes[j].checked = true;
 		}
 	}
@@ -75,8 +75,8 @@ $('button').click(function(){
 	}
 	createCookie("bundle", serviceArray, 1);
 	
-	var cooky = readCookie("bundle");
-	console.log(cooky);
+	//var cooky = readCookie("bundle");
+	//console.log(cooky);
 });
 
 /* depracated function */
